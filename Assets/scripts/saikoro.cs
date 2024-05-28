@@ -73,7 +73,7 @@ public class saikoro : MonoBehaviour
             Rigidbody bd = sui.GetComponent<Rigidbody>();
             bd.velocity = transform.forward.normalized * 10f;
             bd.AddTorque(new Vector3(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)), ForceMode.Acceleration);
-            yield return new WaitForSeconds(0.15f);
+            yield return new WaitForSeconds(0.01f);
             ++a;
         }
         saiok = true;
